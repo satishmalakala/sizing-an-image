@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siizing An Image</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="size-sec">
+        <div class="container">
+            <div class="size-cnt">
+                <h1>Sizing An Image</h1>
+                <p>Increase the width of an image by clicking plus button and decreasing by Minus button
+                    for every action the image Increase or Decrease by 5px
+                </p>
+            </div>
+
+            <div class="sizing-img">
+                <p id="errorMesg"></p>
+                <img src="https://d2clawv67efefq.cloudfront.net/ccbp-dynamic-webapps/sizing-an-image-img.png"
+                    alt="image" id="image" />
+                <p class="img-width">width: <span id="imgWidth"></span></p>
+            </div>
+
+            <div class="sizing-btn">
+                <button onclick="decrement()">-</button>
+                <p class="width-in-px">5px</p>
+                <button onclick="increment()">+</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="size.js"></script>
+</body>
+
+</html>
